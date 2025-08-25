@@ -1,41 +1,25 @@
 import streamlit as st
 
-# MBTI 궁합 데이터 (best + 설명 + 이미지 URL)
+# MBTI 궁합 데이터 (이모지 포함)
 compatibility = {
-    "INTJ": {
-        "best": ["ENFP", "ENTP"],
-        "desc": "계획적인 INTJ는 자유로운 ENFP/ENTP와 잘 맞습니다.",
-        "img": "https://i.imgur.com/8k5RZ0y.png"
-    },
-    "INFP": {
-        "best": ["ENFJ", "ENTJ"],
-        "desc": "이상주의적인 INFP는 이끌어주는 ENFJ/ENTJ와 좋은 관계를 맺습니다.",
-        "img": "https://i.imgur.com/Q4KQ9Jl.png"
-    },
-    "ENFP": {
-        "best": ["INFJ", "INTJ"],
-        "desc": "에너지가 넘치는 ENFP는 통찰력 있는 INFJ/INTJ와 좋은 관계를 형성합니다.",
-        "img": "https://i.imgur.com/3QXbU0C.png"
-    },
-    "ESTJ": {
-        "best": ["ISTP", "INTP"],
-        "desc": "체계적인 ESTJ는 유연한 ISTP/INTP와 궁합이 좋습니다.",
-        "img": "https://i.imgur.com/2EdmCck.png"
-    },
-    # 👉 나머지 MBTI도 같은 방식으로 추가 가능
+    "INTJ": {"best": ["ENFP 🌈", "ENTP 💡"], "desc": "🧠 계획적인 INTJ는 자유로운 ENFP/ENTP와 잘 맞습니다."},
+    "INFP": {"best": ["ENFJ 🤝", "ENTJ 🏆"], "desc": "🌸 이상주의적인 INFP는 이끌어주는 ENFJ/ENTJ와 좋은 관계를 맺습니다."},
+    "ENTJ": {"best": ["INTP 🔍", "INFJ 🔮"], "desc": "👑 리더십 강한 ENTJ는 사색적인 INTP/INFJ와 잘 맞습니다."},
+    "ENFP": {"best": ["INFJ ✨", "INTJ 🧩"], "desc": "⚡ 에너지가 넘치는 ENFP는 통찰력 있는 INFJ/INTJ와 궁합이 좋습니다."},
+    "INTP": {"best": ["ENTJ 🚀", "ESTJ 📊"], "desc": "💡 아이디어 많은 INTP는 추진력 있는 ENTJ/ESTJ와 잘 맞습니다."},
+    "INFJ": {"best": ["ENFP 🌟", "ENTP 🎉"], "desc": "🔮 통찰력 있는 INFJ는 활발한 ENFP/ENTP와 시너지가 좋습니다."},
+    "ESTJ": {"best": ["ISTP 🛠", "INTP 🧪"], "desc": "📏 체계적인 ESTJ는 유연한 ISTP/INTP와 궁합이 좋습니다."},
+    "ESFJ": {"best": ["ISFP 🎨", "ISTP 🔧"], "desc": "💞 친절한 ESFJ는 온화한 ISFP/ISTP와 잘 어울립니다."},
+    "ISTJ": {"best": ["ESFP 🎭", "ESTP 🏄"], "desc": "📚 원칙적인 ISTJ는 자유로운 ESFP/ESTP와 균형이 좋습니다."},
+    "ISFJ": {"best": ["ESFP 🎵", "ESTP 🏃"], "desc": "🌼 헌신적인 ISFJ는 활발한 ESFP/ESTP와 잘 맞습니다."},
+    "ISTP": {"best": ["ESTJ 🗂", "ESFJ 💐"], "desc": "🛠 실용적인 ISTP는 조직적인 ESTJ/ESFJ와 좋은 관계를 가집니다."},
+    "ISFP": {"best": ["ENFJ 🌹", "ESFJ 🎀"], "desc": "🎨 예술적인 ISFP는 따뜻한 ENFJ/ESFJ와 궁합이 좋습니다."},
+    "ESTP": {"best": ["ISFJ 🕊", "ISTJ 🛡"], "desc": "🔥 도전적인 ESTP는 안정적인 ISFJ/ISTJ와 좋은 균형을 이룹니다."},
+    "ESFP": {"best": ["ISTJ 🧱", "ISFJ 🌷"], "desc": "🎉 즐거움을 추구하는 ESFP는 책임감 있는 ISTJ/ISFJ와 잘 맞습니다."},
+    "ENTP": {"best": ["INFJ 🌌", "INTJ 🧠"], "desc": "🚀 창의적인 ENTP는 통찰력 있는 INFJ/INTJ와 좋은 조합입니다."},
+    "ENFJ": {"best": ["INFP 🌙", "ISFP 🌺"], "desc": "💖 배려 깊은 ENFJ는 따뜻한 INFP/ISFP와 궁합이 좋습니다."},
 }
 
-# 웹 페이지 설정
-st.set_page_config(page_title="MBTI 궁합 테스트", page_icon="💖")
-
-# 제목
-st.title("💖 MBTI 궁합 웹")
-
-# MBTI 선택 입력
-user_mbti = st.selectbox("당신의 MBTI를 선택하세요", list(compatibility.keys()))
-
-# 결과 출력
-data = compatibility[user_mbti]
-st.image(data["img"], width=250)  # MBTI 이미지 표시
-st.success(f"✅ [{user_mbti}]와 잘 맞는 유형: {', '.join(data['best'])}")
-st.info(f"💡 {data['desc']}")
+# 페이지 설정
+st.set_page_config(page_title="💖 MBTI 궁합 테스트 💖", page_icon="🌟")
+st.titl
