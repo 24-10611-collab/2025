@@ -1,6 +1,9 @@
 import streamlit as st
 
-# MBTI 궁합 데이터 (이모지 포함)
+# 페이지 설정 (항상 최상단)
+st.set_page_config(page_title="💖 MBTI 궁합 테스트 💖", page_icon="🌟")
+
+# MBTI 궁합 데이터
 compatibility = {
     "INTJ": {"best": ["ENFP 🌈", "ENTP 💡"], "desc": "🧠 계획적인 INTJ는 자유로운 ENFP/ENTP와 잘 맞습니다."},
     "INFP": {"best": ["ENFJ 🤝", "ENTJ 🏆"], "desc": "🌸 이상주의적인 INFP는 이끌어주는 ENFJ/ENTJ와 좋은 관계를 맺습니다."},
@@ -15,11 +18,4 @@ compatibility = {
     "ISTP": {"best": ["ESTJ 🗂", "ESFJ 💐"], "desc": "🛠 실용적인 ISTP는 조직적인 ESTJ/ESFJ와 좋은 관계를 가집니다."},
     "ISFP": {"best": ["ENFJ 🌹", "ESFJ 🎀"], "desc": "🎨 예술적인 ISFP는 따뜻한 ENFJ/ESFJ와 궁합이 좋습니다."},
     "ESTP": {"best": ["ISFJ 🕊", "ISTJ 🛡"], "desc": "🔥 도전적인 ESTP는 안정적인 ISFJ/ISTJ와 좋은 균형을 이룹니다."},
-    "ESFP": {"best": ["ISTJ 🧱", "ISFJ 🌷"], "desc": "🎉 즐거움을 추구하는 ESFP는 책임감 있는 ISTJ/ISFJ와 잘 맞습니다."},
-    "ENTP": {"best": ["INFJ 🌌", "INTJ 🧠"], "desc": "🚀 창의적인 ENTP는 통찰력 있는 INFJ/INTJ와 좋은 조합입니다."},
-    "ENFJ": {"best": ["INFP 🌙", "ISFP 🌺"], "desc": "💖 배려 깊은 ENFJ는 따뜻한 INFP/ISFP와 궁합이 좋습니다."},
-}
-
-# 페이지 설정
-st.set_page_config(page_title="💖 MBTI 궁합 테스트 💖", page_icon="🌟")
-st.titl
+    "ESFP": {"best": ["ISTJ 🧱", "ISFJ 🌷"], "desc": "🎉 즐거움을 추구하
