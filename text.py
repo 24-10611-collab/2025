@@ -1,6 +1,6 @@
 import streamlit as st
 
-# 페이지 설정
+# 페이지 설정 (맨 위에!)
 st.set_page_config(page_title="MBTI 궁합 테스트", page_icon="💖")
 
 # MBTI 궁합 데이터 (심플 버전 + 이모지)
