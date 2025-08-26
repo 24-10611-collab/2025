@@ -31,7 +31,9 @@ st.markdown("✨ 당신의 성격 유형과 잘 맞는 MBTI 궁합을 확인해�
 user_mbti = st.selectbox("👇 당신의 MBTI를 선택하세요 👇", list(compatibility.keys()))
 
 # 결과 출력
-st.success(f"💘 당신의 MBTI **[{user_mbti}]** 와 잘 맞는 유형은 👉 {', '.join(compatibility[user_mbti])} 👈 입니다! 🎯")
+st.success(
+    f"💘 당신의 MBTI **[{user_mbti}]** 와 잘 맞는 유형은 👉 {', '.join(compatibility[user_mbti])} 👈 입니다! 🎯"
+)
 
 # 추가 안내
 st.info("📖 참고: 이 결과는 재미로 보는 MBTI 궁합이에요. 실제 성격은 다를 수 있어요 😆")
