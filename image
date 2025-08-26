@@ -1,0 +1,19 @@
+mbti_app/
+├── text.py          # Streamlit 메인 코드
+├── images/          # MBTI 이미지 폴더
+│   ├── INTJ.png
+│   ├── INTP.png
+│   ├── ENTJ.png
+│   ├── ENTP.png
+│   ├── INFJ.png
+│   ├── INFP.png
+│   ├── ENFJ.png
+│   ├── ENFP.png
+│   ├── ISTJ.png
+│   ├── ISFJ.png
+│   ├── ESTJ.png
+│   ├── ESFJ.png
+│   ├── ISTP.png
+│   ├── ISFP.png
+│   ├── ESTP.png
+│   └── ESFP.png
